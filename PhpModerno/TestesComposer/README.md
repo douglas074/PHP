@@ -1,0 +1,1 @@
+Testes com composer, usando PHPUNIT, PHPCS e PHAN.
