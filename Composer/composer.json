@@ -2,12 +2,10 @@
     "name": "douglas074/buscador-cursos",
     "description": "Buscador de cursos da alura",
     "type": "library",
-    "authors": [
-        {
-            "name": "Douglas Guilherme",
-            "email": "douglas.guilherme0704@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Douglas Guilherme",
+        "email": "douglas.guilherme0704@gmail.com"
+    }],
     "require": {
         "guzzlehttp/guzzle": "^7.4",
         "symfony/dom-crawler": "^6.0",
@@ -15,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PHP\\PhpModerno\\TestesComposer\\src\\": "PhpModerno/TestesComposer/src/"
+            "PHP\\PhpModerno\\TestesComposer\\src\\": "TestesComposer/src/"
         }
     },
     "require-dev": {
@@ -23,8 +21,8 @@
         "squizlabs/php_codesniffer": "^3.6"
     },
     "scripts": {
-        "test": "phpunit ./PhpModerno/TestesComposer/src/Buscador.php",
-        "cs": "phpcs --standard=PSR12  PhpModerno/TestesComposer/src/",
+        "test": "phpunit ./TestesComposer/src/Buscador.php",
+        "cs": "phpcs --standard=PSR12  /TestesComposer/src/",
         "phan": "phan --allow-polyfill-parser",
         "check": [
             "@phan",
@@ -36,7 +34,7 @@
         ]
     },
     "scripts-descriptions": {
-        "test":"Faz testes unitários pelo PHPUNIT",
+        "test": "Faz testes unitários pelo PHPUNIT",
         "cs": "Verifica se o código está dentro das normas da PSR-12",
         "phan": "Procura erros no código a partir do PHAN",
         "check": "Roda as verificações do código, PHAN, PHPCS E PHPUNIT"
