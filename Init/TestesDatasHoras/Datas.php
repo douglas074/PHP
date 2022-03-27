@@ -1,4 +1,5 @@
 <?php
+
     //Usando a função date:
         //Apenas data, pegar o somente os dois últimos valores do ano, usa-se o 'Y' em minúsculo.
         $date = date('d/m/Y');
@@ -21,7 +22,7 @@
                 $format = 'd/m/Y';
                 $stringDay15 = '15/03/2019';
                 $day15 = DateTime::createFromFormat($format, $stringDay15);
-        
+
                 //Para comparar duas váriaveis e ver a diferença de horas entre elas, deve-se usar o comando diff, que vem junto com a interface DateTimeInterface.
                     $input = new DateTime('09:00');
                     $exit = new DateTime('18:00');
@@ -32,7 +33,7 @@
                         $timeZone = new DateTimeZone('America/Sao_Paulo');
                         $now = new DateTime('now', $timeZone);
 
-    //Para que a data de uma váriavel torne-se imutável deve-se usar a interface DateTimeImmutable.                    
+    //Para que a data de uma váriavel torne-se imutável deve-se usar a interface DateTimeImmutable.
         $immutable = new DateTimeImmutable();
         echo $immutable;
 
@@ -42,7 +43,6 @@
         $end = new DateTime('2042');
         $period = new DatePeriod($start, $interval, $end);
 
-        foreach ($period as $date){
-            echo $date->format('d/m/Y');
-        }
-?>
+foreach ($period as $date) {
+    echo $date->format('d/m/Y');
+}

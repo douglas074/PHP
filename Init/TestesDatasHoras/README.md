@@ -1,0 +1,1 @@
+Arquivo com funções para tratamento de data e hora. Necessário extrair apenas a parte desejado do código.

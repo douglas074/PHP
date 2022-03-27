@@ -1,1 +1,0 @@
-Para testar os arquivos, intale guzzlehttp e o symfony e modifique o caminhos no composer.json.
