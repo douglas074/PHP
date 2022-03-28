@@ -1,1 +1,1 @@
-Projeto pessoal, código para um aite de trabalhos.
+Pasta genérica com meus projetos pessoas para testes.
