@@ -1,2 +1,2 @@
 # PHP
-Pasta genérica que contem meus projetos e testes de php.
+Pasta genérica que contem meus testes de php com base nas aulas da Alura.
